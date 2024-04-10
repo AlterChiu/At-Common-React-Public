@@ -1,0 +1,32 @@
+.At-Modal .At-Modal-TitleContainer{
+    width:100%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.At-Modal .MuiDialog-paper{
+    min-width: 40%;
+    max-width: 80%;
+    border-radius: 14px;
+}
+
+.At-Modal-Footer-Container{
+    height: 5vh;
+    padding-top: 0.2rem;
+}
+
+.At-Modal-Footer-Container button{
+    margin: 0 0.2rem 0.6rem 0.2rem;
+    padding: 0.1rem 0 0.1rem 0;
+    height: 90%;
+}
+
+
+/* 手機樣式 */
+@media screen and (max-width: 500px) {
+    .At-Modal .MuiDialog-paper{
+        min-width: 60%;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,30 @@
+.at-drawer .MuiPaper-root {
+  width: 15vw;
+}
+
+.at-drawer-bottomTop .MuiPaper-root {
+  width: 100vw;
+}
+
+@media (max-width: 1200px) {
+  .at-drawer .MuiPaper-root {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .at-drawer .MuiPaper-root {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .at-drawer .MuiPaper-root {
+    width: 60vw;
+  }
+}
+
+.at-drawer-title-icon {
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+}

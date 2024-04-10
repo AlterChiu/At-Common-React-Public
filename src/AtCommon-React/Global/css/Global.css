@@ -1,0 +1,10 @@
+a{
+    border-style: solid;
+    border-right: 2px;
+    margin: 2px 0 2px 0;
+}
+
+*{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 1rem;
+}

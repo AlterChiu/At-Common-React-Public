@@ -1,0 +1,24 @@
+.AtWebCam {
+    margin: auto;
+    padding: 0;
+    width: auto;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+
+.toolbar-button {
+    margin: auto;
+    width: auto;
+    padding: 0 5px 0 5px;
+}
+
+.bound {
+    position: absolute;
+    width: 100px;
+    top: 100px;
+
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}

@@ -1,0 +1,182 @@
+:root {
+  --AtTable-Header-BackgroundColor: #6c757d;
+  --AtTable-Header-Color: #f8f9fa;
+  --AtTable-Body-BackgroundColor: #f7f7f7;
+  --AtTable-Body-Color: #212529;
+  --AtTable-Body-Hover-BackgroundColor: #e4e4e4;
+  --AtTable-Body-Hover-Color: #212529;
+}
+
+.AtTable-CreateBtn {
+  border-radius: 8px;
+  background-color: rgba(10, 133, 96, 0.842);
+  width: 5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: aliceblue;
+  padding-bottom: 5px;
+  margin-bottom: 13px;
+}
+
+.AtTable-CreateBtn ::before {
+  content: "+";
+  color: white;
+}
+
+/* Header相關 */
+.AtTable-Header {
+  background-color: var(--AtTable-Header-BackgroundColor);
+}
+.AtTable-Header th {
+  color: var(--AtTable-Header-Color);
+  font-weight: bolder;
+  border-right: 1.2px solid #495057;
+  border-left: 1.2px solid #495057;
+  border-bottom: 0.2px solid #495057;
+}
+
+.AtTable-HeaderCell.sort {
+  cursor: pointer;
+}
+
+.AtTable-HeaderCell.sort:hover .AtTable-HeaderCell-SortIcon {
+  opacity: 0.8;
+}
+
+.AtTable-HeaderCell-SortIcon {
+  opacity: 0;
+  transition: opacity 0.2s ease; /* 設定透明度的轉場 */
+}
+
+.AtTable-HeaderCell.sort .AtTable-HeaderCell-SortIcon.active {
+  opacity: 1;
+}
+
+.AtTable-HeaderCell-SortIcon svg {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.AtTable-HeaderCell-SortIcon.asc svg {
+  transform: rotate(180deg);
+}
+
+.AtTable-HeaderCell-TitleGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AtTable-HeaderCell-TitleContainer {
+  width: 100%;
+  display: block;
+}
+
+/* Body 相關*/
+
+.AtTable-BodyContainer tr:hover {
+  background-color: var(--AtTable-Body-Hover-BackgroundColor);
+}
+
+.AtTable-BodyContainer td {
+  color: var(--AtTable-Body-Color);
+  border-right: 1.2px solid #d4d4d4;
+  border-left: 1.2px solid #d4d4d4;
+  border-bottom: 0.2px solid #d4d4d4;
+}
+
+.AtTable-BodyContainer td:hover {
+  color: var(--AtTable-Body-Hover-Color);
+}
+
+.AtTable-BodyContainer .AtTable-BodyRow-even {
+  background-color: var(--AtTable-Body-BackgroundColor);
+}
+
+.AtTable-BodyRow.detailable {
+  cursor: pointer;
+}
+
+/* Pagination */
+.AtTable-Pagination-container {
+  display: flex;
+  justify-content: right;
+  height: 2rem;
+  margin: 0;
+}
+
+.AtTable-Pagination-container .AtTable-Pagination-pageOptions {
+  height: 100%;
+}
+
+.AtTable-Pagination-container .lable {
+  margin: auto 0 auto 0;
+}
+
+.AtTable-Filter-Icon:hover{
+  color: #e4e4e4;
+}
+
+.At-Modal.AtTable-Header-FilterDialog .MuiDialog-paper {
+  background-color: #ededed;
+  width: 60%;
+  height: 50vh;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+}
+
+.At-Header-Filter-OptionContainer {
+  background-color: white;
+  border-radius: 17px;
+  margin: 0.8rem 0 0 0;
+  max-height: 20vh;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  max-height: 30vh;
+  height: auto;
+  overflow-y: auto;
+}
+
+.AtTable-Header-Filter-TitleContainer {
+  height: 5vh;
+}
+.AtTable-Header-FilterDialog .AtTable-Header-Filter-ContentContainer {
+  height: 35vh;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+}
+
+.At-Header-Filter-OptionContainer::-webkit-scrollbar-thumb {
+  border-radius: 20px; /* 設置滾動條圓角 */
+}
+
+.At-Header-Filter-search {
+  height: 10vh;
+}
+
+.At-Modal-Conent-Container {
+  height: 100%;
+}
+
+.AtTable-Header-Filter-FooterContainer {
+  height: 5vh;
+}
+
+@media screen and (max-width: 545px) {
+  .At-Modal.AtTable-Header-FilterDialog .MuiDialog-paper {
+    width: 90%;
+    height: 80vh;
+  }
+
+  .AtTable-Header-Filter-TitleContainer {
+    height: 15vh;
+  }
+
+  .At-Header-Filter-search {
+    height: 10vh;
+  }
+  .At-Header-Filter-OptionContainer {
+    max-height: 45vh;
+  }
+  .AtTable-Header-Filter-FooterContainer {
+    height: 10vh;
+  }
+}

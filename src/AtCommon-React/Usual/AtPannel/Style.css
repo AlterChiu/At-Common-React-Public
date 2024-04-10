@@ -1,0 +1,88 @@
+.AtPannel-Paper {
+  background-color: #E4E2E4;
+  border-radius: 4px;
+}
+
+.AtPannel-Paper .AtPannel-Paper-Title {
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+  display: flex;
+  cursor: move;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 999;
+}
+
+.AtPannel-Paper-Title{
+    color: rgb(32, 32, 32);
+}
+
+.AtPannel-Paper-Title .AtPannel-Paper-Title-Label {
+  flex-grow: 1;
+}
+
+.AtPannel-Paper-Title .AtPannel-Paper-Title-Options {
+  justify-self: flex-end;
+  display: flex;
+}
+
+.AtPannel-Paper-Title-Options .cbtn {
+  padding: 0px 6px 0px 6px;
+  margin: 2px 1px 2px 1px;
+  background-color: #cfcfcf;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.1s ease; /* 設定過渡效果 */
+}
+
+/* 關閉按鈕 */
+.AtPannel-Paper-Title-Options .cbtn.close:hover {
+  background-color: #ee6a5e;
+}
+
+.AtPannel-Paper-Title-Options .cbtn.close:active {
+  background-color: #d8655a;
+}
+
+/*最小化*/
+.AtPannel-Paper-Title-Options .cbtn.minimize:hover {
+  background-color: #ffc000;
+}
+
+.AtPannel-Paper-Title-Options .cbtn.minimize:active {
+  background-color: #e2aa00;
+}
+
+/*最小化*/
+.AtPannel-Paper-Title-Options .cbtn.detail:hover {
+  background-color: #08c60b;
+}
+
+.AtPannel-Paper-Title-Options .cbtn.detail:active {
+  background-color: #0e9411;
+}
+
+.AtPannel-Paper-Content {
+  overflow: auto;
+  height: calc(100% - 1rem - 12px);
+  margin: 0 2px 2px 2px;
+  background-color: white;
+  position: relative;
+}
+
+.AtPannel-Paper-Content::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.AtPannel-Paper-Content::-webkit-scrollbar-track {
+  background-color: #e9e9e9;
+}
+
+.AtPannel-Paper-Content::-webkit-scrollbar-thumb {
+  background-color: #919191;
+  width: 10px;
+}

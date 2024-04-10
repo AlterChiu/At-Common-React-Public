@@ -1,0 +1,53 @@
+.AtDou-Modal-Container {
+  display: flex;
+  justify-content: center;
+}
+
+.AtDou-Modal-background {
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto 5% auto 5%;
+}
+.AtDou-Modal-background :focus-visible {
+  outline: none;
+}
+
+.AtDou-Modal-Header {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 20px 5% 6px 5%;
+  margin: 0 0 20px 0;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #959595;
+}
+
+.AtDou-Modal-Content {
+  padding: 0 5% 0 5%;
+}
+
+.AtDou-Modal-footer {
+  margin: 0 0 2% -5%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 3% 0 0 0;
+}
+
+.AtDou-Modal-footer button {
+  margin: 0 8px 0 8px;
+  width: 10vh;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.AtDou-Option-Btn {
+  cursor: pointer;
+  padding: 3px;
+  color: #686868;
+}
+.AtDou-Option-Btn:hover {
+  color: rgb(37, 37, 37);
+}

@@ -1,0 +1,51 @@
+.at-login-container{
+    height:100vh;
+    max-height: 100%;
+    padding-right: 2vw;
+}
+
+.at-login-input-text{
+    height: calc(2.875rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-radius: 0;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+
+  
+  /* Style the form icons */
+  .icon {
+    line-height: 2.8rem;
+    background: dodgerblue;
+    color: white;
+    min-width: 1.3rem;
+    text-align: center;
+  }
+
+  .at-login-icon-visible{
+    color: rgb(54, 54, 54);
+    background-color: rgba(240, 248, 255, 0);
+    max-width: 0.5rem;
+    padding-right: 2.2rem;
+
+    cursor: pointer;
+  }
+
+  /*註冊帳號的modal*/
+  .at-signup{
+    margin:auto;
+    margin-top: 10vh;
+  }
+
+  /*註冊帳號的modal*/
